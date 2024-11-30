@@ -9,11 +9,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+
+      - name: Checkout code
+        uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
@@ -23,6 +25,5 @@ jobs:
         run: |
           pip install poetry
           poetry install
-
       - name: Run linter
         run: flake8
