@@ -2,7 +2,7 @@
 name = "llanguage"
 version = "0.1.0"
 description = ""
-authors = ["Alexei Korpachev alekkorpachyov@gmail.com"]
+authors = ["Alexei Korpachev <alekkorpachyov@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
